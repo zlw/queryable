@@ -30,7 +30,7 @@ module Queryable
   #
   # query - The internal query to build upon.
   def initialize(query)
-    @queryable = query.all
+    @queryable = query.scoped
   end
 
   # Internal: Contains the Queryable class methods.
